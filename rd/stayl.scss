@@ -1,0 +1,86 @@
+@import"./../mixin.scss";
+
+.container {
+    width: 90%;
+    @include flax();
+    margin: 20px auto;
+}
+
+
+.box-a {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 11px 16px 1px rgba(0, 0, 0, 0.78);
+    border-radius: 0px 40px;
+
+    img {
+        width: 260px;
+        height: 200px;
+        border-radius: 0px 40px;
+
+    }
+    input{
+        display: block;
+        margin: 10px auto;
+    }
+    h2 {
+        font-size: 30px;
+        color: red;
+        transform: scale(1.2);
+    }
+
+    .button-33 {
+        background-color: #c2fbd7;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+
+       
+    }
+
+    .button-33:hover {
+        box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+    }
+}
+
+.box:hover {
+    transform: scale(1.1) translate(23px, 0px);
+    transition: 2s;
+}
+
+.container-sm {
+    width: 100%;
+    height: 100vh;
+
+    .box-rd {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 90vh;
+        }
+
+
+    }
+}

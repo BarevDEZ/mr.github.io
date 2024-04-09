@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.container {
+  width: 90%;
+  /*@mixin  Տալիս ենք բանալի բառ (flax) որ հետո կանչենք ուրիշ տեղ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; /* տալիս ենք ցնող բլոկին տողադադարձ կատարելու համար  */
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; /*տողադարձ լինելու դեպքում բլոկը ստանում է  width 100% կարգավիճակ */
+  margin: 20px auto;
+}
+
+.box-a {
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 10px 11px 16px 1px rgba(0, 0, 0, 0.78);
+          box-shadow: 10px 11px 16px 1px rgba(0, 0, 0, 0.78);
+  border-radius: 0px 40px;
+}
+.box-a img {
+  width: 260px;
+  height: 200px;
+  border-radius: 0px 40px;
+}
+.box-a input {
+  display: block;
+  margin: 10px auto;
+}
+.box-a h2 {
+  font-size: 30px;
+  color: red;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.box-a .button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  -webkit-box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+          box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+.box-a .button-33:hover {
+  -webkit-box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+          box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  -webkit-transform: scale(1.05) rotate(-1deg);
+          transform: scale(1.05) rotate(-1deg);
+}
+
+.box:hover {
+  -webkit-transform: scale(1.1) translate(23px, 0px);
+          transform: scale(1.1) translate(23px, 0px);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
